@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UPSB – Pacar Air Fabiola & Claire</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF8FA;--sf:#fff;--ink:#2B1420;--mut:#7A5A68;--line:#F1D9E3;--pk:#D6246E;--pkd:#A8134F;--pkt:#FFE3EE;--lf:#1F6B4A;--lft:#DDF3E8;--wn:#FFF1D6;--wni:#7A4B00;--onpk:#fff;--hero:#C21660;--r:22px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1A0E14;--sf:#26151D;--ink:#FBEAF1;--mut:#C9A3B4;--line:#42242F;--pk:#FF5C9A;--pkd:#FF8DB8;--pkt:#4A1B32;--lf:#66D6A0;--lft:#173A2B;--wn:#3B2E10;--wni:#FFD98A;--onpk:#2B0A1A}}
+:root[data-theme=dark]{--bg:#1A0E14;--sf:#26151D;--ink:#FBEAF1;--mut:#C9A3B4;--line:#42242F;--pk:#FF5C9A;--pkd:#FF8DB8;--pkt:#4A1B32;--lf:#66D6A0;--lft:#173A2B;--wn:#3B2E10;--wni:#FFD98A;--onpk:#2B0A1A}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);color-scheme:light dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:500 16px/1.5 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3,p{margin:0}h1{font-size:clamp(1.65rem,5.4vw,2.6rem);line-height:1.08;font-weight:800;letter-spacing:-.025em}
+h2{font-size:1.25rem;font-weight:800;letter-spacing:-.015em}h3{font-size:1rem;font-weight:700}
+.mut{color:var(--mut);font-size:.9rem}a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--pk);outline-offset:2px;border-radius:10px}
+.ic{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+main{max-width:1040px;margin:0 auto;padding:14px 16px 112px}
+.v{display:none}.v.on{display:block}
+.sec{margin-top:30px}.sec>h2{margin-bottom:12px}
+/* nav */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;background:var(--sf);border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
+.tabs .brand{display:none}
+.tabs a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;font-size:.72rem;font-weight:700;color:var(--mut);border-radius:14px}
+.tabs a.on{color:var(--pk)}.tabs a.on .ic{background:var(--pkt);border-radius:10px;padding:2px;width:32px;height:28px}
+.tabs a .ic{width:28px;height:28px;padding:2px}
+@media(min-width:900px){
+ .tabs{position:sticky;top:env(safe-area-inset-top,0px);bottom:auto;border:0;border-bottom:1px solid var(--line);padding:10px max(24px,calc(50% - 496px));gap:4px;align-items:center}
+ .tabs .brand{display:flex;align-items:center;gap:10px;font-weight:800;margin-right:auto;font-size:1.1rem}
+ .tabs a{flex:none;flex-direction:row;gap:8px;padding:8px 14px;font-size:.92rem}.tabs a .ic,.tabs a.on .ic{width:22px;height:22px;padding:0;background:none}
+ .tabs a.on{background:var(--pkt)}main{padding-bottom:64px}.mtop{display:none!important}}
+/* top row */
+.mtop{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.mtop b{font-weight:800}.mtop .mut{display:block;font-size:.78rem;line-height:1.2}
+.pill{display:flex;align-items:center;gap:10px;width:100%;padding:14px 16px;background:var(--sf);border:1.5px solid var(--line);border-radius:999px;color:var(--mut);font-weight:600;text-align:left;cursor:pointer}
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--hero);color:#fff;border-radius:28px;padding:26px 22px 24px;margin-top:14px;min-height:300px}
+.hero p{max-width:30ch;margin-top:12px;opacity:.95}
+.hero .bl{position:absolute;right:-70px;bottom:-80px;width:290px;pointer-events:none}
+.hero .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;position:relative}
+.tag{display:inline-block;background:rgba(255,255,255,.2);padding:5px 12px;border-radius:999px;font-size:.78rem;font-weight:700;margin-bottom:14px}
+@media(min-width:900px){.hero{padding:48px;min-height:380px;display:flex;flex-direction:column;justify-content:center}.hero h1{max-width:15ch}.hero .bl{width:480px;right:-40px;bottom:-110px}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border:0;border-radius:999px;font-weight:800;cursor:pointer;background:var(--pk);color:var(--onpk)}
+.btn.w{background:#fff;color:#A8134F}.btn.g{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}.btn.s{min-height:40px;padding:0 16px;font-size:.88rem}
+.btn:active{transform:scale(.97)}
+/* service grid */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px 6px}
+.svc{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-size:.78rem;font-weight:700;line-height:1.2;padding:4px 0}
+.svc i{display:grid;place-items:center;width:100%;max-width:68px;aspect-ratio:1;border-radius:22px;background:var(--pkt);color:var(--pk)}
+.svc:nth-child(3n) i{background:var(--lft);color:var(--lf)}
+.svc i .ic{width:32px;height:32px}
+@media(min-width:900px){.grid4{grid-template-columns:repeat(8,1fr)}.svc{font-size:.88rem}}
+/* promo strip */
+.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 6px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.pr{flex:0 0 min(78%,320px);scroll-snap-align:start;border-radius:var(--r);padding:18px;min-height:132px;display:flex;flex-direction:column;justify-content:space-between}
+.pr h3{font-size:1.05rem;line-height:1.25}.pr.a{background:var(--pkt)}.pr.b{background:var(--lft);color:#14452f}.pr.c{background:var(--ink);color:var(--bg)}
+@media(prefers-color-scheme:dark){.pr.b{color:#BFEFD9}}
+/* cards */
+.cards{display:grid;gap:14px}@media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--sf);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.var{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center}
+.var .ph{width:96px;height:96px;border-radius:26px;display:grid;place-items:center;background:var(--pkt)}
+.var.cl .ph{background:#FFF0F6}.var ul{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:4px;font-size:.9rem}
+.var li b{font-weight:800}
+.note{background:var(--wn);color:var(--wni);border-radius:16px;padding:12px 14px;font-size:.85rem;font-weight:600}
+/* steps */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{position:relative;padding:0 0 18px 52px;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--pk);color:var(--onpk);display:grid;place-items:center;font-weight:800}
+.steps li::after{content:"";position:absolute;left:17px;top:40px;bottom:4px;width:2px;background:var(--line)}
+.steps li:last-child::after{display:none}.steps b{display:block}
+/* forms */
+.top{display:flex;align-items:center;gap:12px;margin-bottom:14px}.top h1{font-size:1.5rem}
+.f{display:grid;gap:16px}.fl{display:grid;gap:6px;font-weight:700;font-size:.9rem}
+.in{width:100%;min-height:50px;padding:12px 14px;border:1.5px solid var(--line);border-radius:16px;background:var(--sf);font-weight:500}
+textarea.in{min-height:84px;resize:vertical}.in:focus{outline:none;border-color:var(--pk);box-shadow:0 0 0 3px var(--pkt)}
+.er{color:#B4123F;font-size:.82rem;font-weight:600;min-height:0}@media(prefers-color-scheme:dark){.er{color:#FF9DB9}}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;background:var(--pkt);padding:5px;border-radius:18px}
+.seg button{min-height:48px;border:0;border-radius:14px;background:transparent;font-weight:700;cursor:pointer;color:var(--mut)}
+.seg button[aria-pressed=true]{background:var(--sf);color:var(--pk);box-shadow:0 1px 3px rgba(120,20,60,.18)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:0 16px;border:1.5px solid var(--line);border-radius:999px;background:var(--sf);font-weight:700;cursor:pointer;font-size:.88rem}
+.chip[aria-pressed=true]{background:var(--pk);border-color:var(--pk);color:var(--onpk)}
+.qty{display:flex;align-items:center;gap:6px}.qty button{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--line);background:var(--sf);font-size:1.4rem;font-weight:700;cursor:pointer;color:var(--pk)}
+.qty input{width:110px;text-align:center;font-weight:800;font-size:1.2rem}
+.sum{position:sticky;bottom:calc(76px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);border-radius:22px;padding:14px 16px;display:flex;align-items:center;gap:12px;justify-content:space-between}
+.sum small{display:block;opacity:.75;font-weight:600}.sum b{font-size:1.02rem}
+@media(min-width:900px){.sum{bottom:16px}.two{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}.two>aside{position:sticky;top:90px}}
+.ck{display:flex;gap:12px;align-items:flex-start;font-size:.9rem;font-weight:500}.ck input{width:22px;height:22px;accent-color:var(--pk);margin-top:2px;flex:none}
+.ok{text-align:center;padding:34px 20px}.ok svg.bl{width:120px;margin:0 auto 10px;display:block}.code{display:inline-block;margin:12px 0;padding:8px 16px;border-radius:12px;background:var(--pkt);font-weight:800;color:var(--pkd);font-variant-numeric:tabular-nums}
+/* trace */
+.bt{background:var(--hero);color:#fff;border-radius:28px;padding:22px;position:relative;overflow:hidden}
+.bt .bl{position:absolute;right:-40px;top:-30px;width:170px;opacity:.9}.bt b{font-size:1.5rem;display:block;margin-top:6px;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.bt.off{background:#5b4a52}.bt.off .bl{opacity:.2}
+.kv{display:grid;gap:0}.kv div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}.kv div:last-child{border:0}.kv span{color:var(--mut)}.kv b{text-align:right}
+.st{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:800;background:var(--wn);color:var(--wni)}.st.g{background:var(--lft);color:var(--lf)}.st.p{background:var(--pkt);color:var(--pkd)}
+/* admin */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:700px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{border-radius:20px;padding:14px 16px;background:var(--sf);border:1px solid var(--line)}.stat b{font-size:2rem;font-weight:800;line-height:1;display:block;letter-spacing:-.03em}
+.stat.h{background:var(--pk);color:var(--onpk);border-color:var(--pk)}
+.ord{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--sf);border:1px solid var(--line);border-radius:20px;padding:14px;margin-bottom:10px;cursor:pointer}
+.ord .av{width:46px;height:46px;border-radius:16px;background:var(--pkt);display:grid;place-items:center;flex:none}.ord>div:nth-child(2){flex:1;min-width:0}
+.ord b,.ord .mut{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sheet{position:fixed;inset:0;z-index:40;background:rgba(40,8,24,.5);display:none;align-items:flex-end;justify-content:center}.sheet.on{display:flex}
+.sheet>div{background:var(--bg);width:min(560px,100%);max-height:92%;overflow:auto;border-radius:28px 28px 0 0;padding:20px 18px calc(22px + env(safe-area-inset-bottom,0px));animation:up .22s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+@media(min-width:900px){.sheet{align-items:center}.sheet>div{border-radius:28px}}
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:999px;font-weight:700;z-index:50;display:none;font-size:.9rem}
+footer{margin-top:36px;font-size:.82rem;color:var(--mut)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><symbol id="p" viewBox="-40 -80 80 84"><path d="M0 0C-26-18-34-62-14-74-8-78-3-72 0-66 3-72 8-78 14-74 34-62 26-18 0 0Z"/></symbol></defs>
+<g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4zM10 20v-6h4v6"/></symbol>
+<symbol id="i-pot" viewBox="0 0 24 24"><path d="M6 12h12l-1.4 7.2a1 1 0 0 1-1 .8H8.4a1 1 0 0 1-1-.8zM12 12V7M12 8C10 4.5 7 5.5 7 7.5M12 8c2-3.500 5-2.500 5-.5"/></symbol>
+<symbol id="i-stek" viewBox="0 0 24 24"><path d="M12 3v10M12 6c-2 0-3-1-4-2M12 9c2 0 3-1 4-2M12 13c0 3-2 5-5 7M12 13v8M12 13c0 3 2 5 5 7"/></symbol>
+<symbol id="i-mit" viewBox="0 0 24 24"><circle cx="8.500" cy="12" r="4.500"/><circle cx="15.500" cy="12" r="4.500"/></symbol>
+<symbol id="i-qr" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h3v3h-3zM20 14v6h-3M14 20h0"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4zM8 9.500h8M8 12.500h5"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8zM7.500 8.500h.01"/></symbol>
+<symbol id="i-q" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></symbol>
+<symbol id="i-dash" viewBox="0 0 24 24"><path d="M4 20V11M10 20V4M16 20v-6M22 20H2"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11zM12 12h.01"/></symbol>
+</g></svg>
+
+<nav class="tabs" id="tabs" aria-label="Navigasi utama">
+ <span class="brand"><span data-bl="sm"></span>UPSB</span>
+ <a href="#beranda" data-t="beranda"><svg class="ic"><use href="#i-home"/></svg>Beranda</a>
+ <a href="#pesan" data-t="pesan"><svg class="ic"><use href="#i-pot"/></svg>Pesan</a>
+ <a href="#kemitraan" data-t="kemitraan"><svg class="ic"><use href="#i-mit"/></svg>Kemitraan</a>
+ <a href="#lacak" data-t="lacak"><svg class="ic"><use href="#i-qr"/></svg>Lacak</a>
+ <a href="#admin" data-t="admin"><svg class="ic"><use href="#i-dash"/></svg>Admin</a>
+</nav>
+
+<main>
+<p class="note" style="margin-bottom:12px">Prototipe tampilan. Formulir belum terhubung ke server dan data di bawah adalah contoh.</p>
+
+<!-- BERANDA -->
+<section class="v" id="v-beranda">
+ <div class="mtop"><span data-bl="sm"></span><div><b>UPSB</b><span class="mut">Baturraden, Banyumas</span></div></div>
+ <a class="pill" href="#pesan"><svg class="ic"><use href="#i-pot"/></svg>Butuh pot atau stek untuk pekan berapa?</a>
+ <div class="hero">
+  <span class="tag">Prapesan Fabiola & Claire</span>
+  <h1>Pacar air berbunga lebat, dipesan sesuai pekan Anda.</h1>
+  <p>Kirim permintaan. Tim UPSB memeriksa jadwal dan menghubungi Anda lewat WhatsApp.</p>
+  <div class="row"><a class="btn w" href="#pesan">Pesan produk</a><a class="btn g" href="#kemitraan">Ajukan kemitraan</a></div>
+  <span class="bl" data-bl="hero"></span>
+ </div>
+ <div class="sec"><div class="grid4">
+  <a class="svc" href="#pesan-pot"><i><svg class="ic"><use href="#i-pot"/></svg></i>Pot 12 cm</a>
+  <a class="svc" href="#pesan-stek"><i><svg class="ic"><use href="#i-stek"/></svg></i>Stek berakar</a>
+  <a class="svc" href="#kemitraan"><i><svg class="ic"><use href="#i-mit"/></svg></i>Kemitraan</a>
+  <a class="svc" href="#lacak"><i><svg class="ic"><use href="#i-qr"/></svg></i>Lacak batch</a>
+  <a class="svc" href="#harga"><i><svg class="ic"><use href="#i-tag"/></svg></i>Harga</a>
+  <a class="svc" href="#cara"><i><svg class="ic"><use href="#i-wa"/></svg></i>Cara pesan</a>
+  <a class="svc" href="#varietas"><i><svg class="ic"><use href="#i-pin"/></svg></i>Varietas</a>
+  <a class="svc" href="#faq"><i><svg class="ic"><use href="#i-q"/></svg></i>Tanya jawab</a>
+ </div></div>
+ <div class="sec"><div class="strip">
+  <div class="pr a"><h3>Isi pekan kebutuhan lebih awal</h3><p class="mut" style="color:inherit;opacity:.8">Jadwal produksi disusun dari permintaan mingguan.</p></div>
+  <div class="pr b"><h3>Nursery? Mulai dari stek berakar</h3><a class="btn s" href="#pesan-stek" style="align-self:flex-start;background:#14452f;color:#fff">Minta stek</a></div>
+  <div class="pr c"><h3>Setiap kemasan punya kode batch</h3><a class="btn s" href="#lacak" style="align-self:flex-start">Lihat contoh</a></div>
+ </div></div>
+
+ <div class="sec" id="varietas"><h2>Dua varietas, dua karakter</h2>
+  <div class="cards">
+   <div class="card var"><div class="ph" data-bl="fab"></div><div><h3>Fabiola</h3><ul><li><b>Rimbun</b> dengan percabangan sekunder</li><li><b>Tunas dan bunga</b> dalam jumlah tinggi</li></ul></div></div>
+   <div class="card var cl"><div class="ph" data-bl="cla"></div><div><h3>Claire</h3><ul><li><b>Bunga besar</b></li><li><b>Mekar serempak</b> dalam satu tanaman</li></ul></div></div>
+  </div>
+  <p class="mut" style="margin-top:10px">Karakter mengacu pada materi teknologi YIM_013. Ketahanan di dataran rendah masih perlu divalidasi lewat uji lokal.</p>
+ </div>
+
+ <div class="sec" id="harga"><h2>Harga indikatif</h2>
+  <div class="cards">
+   <div class="card"><span class="mut">Tanaman pot berbunga 12 cm</span><h2 style="font-size:1.8rem;margin-top:4px">Rp11.000 <span class="mut">per pot</span></h2></div>
+   <div class="card"><span class="mut">Stek berakar untuk nursery</span><h2 style="font-size:1.8rem;margin-top:4px">Rp2.800 <span class="mut">per stek</span></h2></div>
+  </div>
+  <p class="mut" style="margin-top:10px">Harga dapat berubah dan dikonfirmasi admin bersama ongkos kirim.</p>
+ </div>
+
+ <div class="sec" id="cara"><h2>Dari formulir sampai kirim</h2>
+  <ol class="steps card">
+   <li><b>Pilih produk</b><span class="mut">Pot 12 cm atau stek berakar, Fabiola atau Claire.</span></li>
+   <li><b>Kirim permintaan</b><span class="mut">Isi jumlah, lokasi, dan pekan kebutuhan. Tanpa akun.</span></li>
+   <li><b>Admin memeriksa</b><span class="mut">Ketersediaan, jadwal, dan harga akhir dicek.</span></li>
+   <li><b>Konfirmasi lewat WhatsApp</b><span class="mut">Pesanan sah setelah ada kesepakatan dengan admin.</span></li>
+   <li><b>Produksi dan pengiriman</b><span class="mut">Kemasan membawa QR batch.</span></li>
+  </ol>
+ </div>
+
+ <div class="sec" id="faq"><h2>Tanya jawab</h2>
+  <div class="card" style="padding:6px 18px">
+   <details style="padding:12px 0;border-bottom:1px solid var(--line)"><summary><b>Apakah mengirim formulir berarti pesanan pasti?</b></summary><p class="mut" style="margin-top:8px">Belum. Formulir mencatat permintaan. Pesanan terkonfirmasi setelah admin dan Anda sepakat.</p></details>
+   <details style="padding:12px 0;border-bottom:1px solid var(--line)"><summary><b>Apakah ada pembayaran di website?</b></summary><p class="mut" style="margin-top:8px">Tidak. Pembayaran dibahas langsung dengan admin.</p></details>
+   <details style="padding:12px 0"><summary><b>Apa isi halaman QR?</b></summary><p class="mut" style="margin-top:8px">Identitas varietas, kode batch, tanggal, dan hasil pemeriksaan yang sudah terverifikasi. Yang belum ada akan tertulis belum tersedia.</p></details>
+  </div>
+ </div>
+ <footer>Informasi lisensi, sertifikat PVT, dan kesehatan tanaman hanya ditampilkan setelah dokumennya diverifikasi.</footer>
+</section>
+
+<!-- PESAN -->
+<section class="v" id="v-pesan">
+ <div class="top"><a class="btn s g" href="#beranda" aria-label="Kembali ke beranda"><svg class="ic" style="width:20px"><use href="#i-back"/></svg>Beranda</a></div>
+ <div class="two">
+ <div id="orderBox">
+  <h1 style="font-size:1.8rem">Minta produk</h1>
+  <p class="mut" style="margin:8px 0 18px;max-width:52ch">Ini permintaan pemesanan. Tim UPSB memeriksa ketersediaan, harga, dan jadwal, lalu menghubungi Anda lewat WhatsApp.</p>
+  <form class="f" id="of" novalidate>
+   <div class="fl">Jenis produk<div class="seg" id="sp"><button type="button" data-v="pot" aria-pressed="true">Pot 12 cm</button><button type="button" data-v="stek" aria-pressed="false">Stek berakar</button></div></div>
+   <div class="fl">Varietas<div class="chips" id="sv"><button type="button" class="chip" data-v="Fabiola" aria-pressed="true">Fabiola</button><button type="button" class="chip" data-v="Claire" aria-pressed="false">Claire</button></div></div>
+   <div class="fl">Jumlah<div class="qty"><button type="button" data-d="-10" aria-label="Kurangi 10">−</button><input class="in" id="q" inputmode="numeric" value="50" aria-label="Jumlah"><button type="button" data-d="10" aria-label="Tambah 10">+</button><span class="mut" id="un">pot</span></div><span class="er" id="e-q"></span></div>
+   <label class="fl">Pekan kebutuhan<select class="in" id="wk"></select><span class="mut" style="font-weight:500">Preferensi Anda, bukan jaminan tanggal kirim.</span></label>
+   <label class="fl">Nama<input class="in" id="nm" autocomplete="name"><span class="er" id="e-nm"></span></label>
+   <label class="fl">Jenis pelanggan<select class="in" id="jp"><option>Kios tanaman hias</option><option>Nursery</option><option>Lanskap</option><option>Hotel atau komersial</option><option>Perorangan</option></select></label>
+   <label class="fl">Nomor WhatsApp<input class="in" id="wa" type="tel" placeholder="0812 3456 7890" autocomplete="tel"><span class="er" id="e-wa"></span></label>
+   <label class="fl">Alamat pengiriman<textarea class="in" id="ad" placeholder="Jalan, kecamatan, kabupaten atau kota, provinsi"></textarea><span class="er" id="e-ad"></span></label>
+   <label class="ck"><input type="checkbox" id="pv"><span>Saya setuju data ini diproses UPSB untuk menindaklanjuti permintaan.</span></label><span class="er" id="e-pv"></span>
+   <div class="sum"><div><small id="s1"></small><b id="s2"></b></div><button class="btn" type="submit">Kirim permintaan</button></div>
+  </form>
+ </div>
+ <aside class="note" style="margin-top:18px">Pesanan belum dianggap terkonfirmasi sebelum ada kesepakatan dengan admin.</aside>
+ </div>
+</section>
+
+<!-- KEMITRAAN -->
+<section class="v" id="v-kemitraan">
+ <div class="top"><a class="btn s g" href="#beranda"><svg class="ic" style="width:20px"><use href="#i-back"/></svg>Beranda</a></div>
+ <div id="mitBox" style="max-width:640px">
+  <h1 style="font-size:1.8rem">Ajukan kemitraan</h1>
+  <p class="mut" style="margin:8px 0 18px">Ini pengajuan awal dan belum menjadi persetujuan kemitraan. Tim UPSB meninjau profil usaha, lalu menghubungi Anda.</p>
+  <form class="f" id="mf" novalidate>
+   <label class="fl">Nama penanggung jawab<input class="in" id="mn"><span class="er" id="e-mn"></span></label>
+   <label class="fl">Nama usaha<input class="in" id="mu"><span class="er" id="e-mu"></span></label>
+   <label class="fl">Jenis usaha<select class="in"><option>Nursery</option><option>Pembibitan</option><option>Kios</option><option>Distributor</option><option>Lanskap</option></select></label>
+   <div class="fl">Kerja sama yang diminati<div class="chips" id="mc"><button type="button" class="chip" aria-pressed="false">Beli stek berakar</button><button type="button" class="chip" aria-pressed="false">Pembesaran tanaman</button><button type="button" class="chip" aria-pressed="false">Beli tanaman pot</button><button type="button" class="chip" aria-pressed="false">Distribusi</button></div><span class="er" id="e-mc"></span></div>
+   <label class="fl">Nomor WhatsApp<input class="in" id="mw" type="tel" placeholder="0812 3456 7890"><span class="er" id="e-mw"></span></label>
+   <label class="ck"><input type="checkbox" id="mp"><span>Saya setuju dihubungi UPSB dan data diproses untuk peninjauan.</span></label><span class="er" id="e-mp"></span>
+   <button class="btn" type="submit" style="width:100%">Kirim pengajuan</button>
+  </form>
+ </div>
+</section>
+
+<!-- LACAK -->
+<section class="v" id="v-lacak">
+ <div class="top"><a class="btn s g" href="#beranda"><svg class="ic" style="width:20px"><use href="#i-back"/></svg>Beranda</a></div>
+ <div style="max-width:560px;margin:0 auto">
+  <div class="seg" id="tg" style="margin-bottom:14px"><button data-v="on" aria-pressed="true">Contoh QR aktif</button><button data-v="off" aria-pressed="false">QR dinonaktifkan</button></div>
+  <div id="tr"></div>
+ </div>
+</section>
+
+<!-- ADMIN -->
+<section class="v" id="v-admin">
+ <div class="top"><div><h1 style="font-size:1.6rem">Dashboard admin</h1><span class="mut">Contoh tampilan. Login dan hak akses belum aktif.</span></div></div>
+ <div class="stats" id="stats"></div>
+ <div class="sec"><h2>Permintaan masuk</h2>
+  <div class="chips" id="fl" style="margin-bottom:12px"></div>
+  <div id="ol"></div>
+ </div>
+</section>
+</main>
+
+<div class="sheet" id="sh" role="dialog" aria-modal="true" aria-label="Detail permintaan"><div id="shc"></div></div>
+<div class="toast" id="ts" role="status"></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+/* bloom: lima kelopak berlekuk khas Impatiens */
+function bloom(a,b,anim){let o="";for(let i=0;i<5;i++){const an=anim&&!RM?`<animateTransform attributeName="transform" type="scale" from=".1" to="1" dur=".9s" begin="${(i*.12).toFixed(2)}s" fill="freeze" calcMode="spline" keySplines=".2 .8 .2 1" keyTimes="0;1"/>`:"";o+=`<g transform="rotate(${i*72})"><g><use href="#p" x="-40" y="-80" width="80" height="84" fill="${a}">${an}</use></g><path d="M0 -8V-48" stroke="${b}" stroke-width="2" stroke-linecap="round" opacity=".5"/></g>`}
+ return`<svg viewBox="-82 -82 164 164" class="bl" aria-hidden="true">${o}<circle r="10" fill="${b}"/><circle r="4" fill="#FFE9A8"/></svg>`}
+const B={hero:bloom("#FF8DB8","#8E0E45",true),sm:bloom("#D6246E","#7A0A3A").replace('class="bl"','width="34" height="34"'),fab:bloom("#E0327A","#7A0A3A").replace('class="bl"','width="76" height="76"'),cla:bloom("#FF9CC2","#C21660").replace('class="bl"','width="76" height="76"')};
+$$("[data-bl]").forEach(e=>e.innerHTML=B[e.dataset.bl]);
+const toast=m=>{const t=$("#ts");t.textContent=m;t.style.display="block";clearTimeout(toast.k);toast.k=setTimeout(()=>t.style.display="none",2400)};
+/* routing */
+const rt=()=>{let h=(location.hash||"#beranda").slice(1);const full=h;
+ if(h==="pesan-pot"||h==="pesan-stek"){setP(h.slice(6));h="pesan"}
+ if(["harga","cara","varietas","faq"].includes(h)){go("beranda");document.getElementById(h)?.scrollIntoView();return}
+ go(h in{beranda:1,pesan:1,kemitraan:1,lacak:1,admin:1}?h:"beranda");if(!["harga"].includes(full))scrollTo(0,0)};
+function go(n){$$(".v").forEach(v=>v.classList.toggle("on",v.id==="v-"+n));$$("#tabs a").forEach(a=>{a.classList.toggle("on",a.dataset.t===n);a.setAttribute("aria-current",a.dataset.t===n?"page":"false")})}
+addEventListener("hashchange",rt);
+/* order form */
+const S={p:"pot",v:"Fabiola"};const rp=n=>"Rp"+n.toLocaleString("id-ID");
+function setP(p){S.p=p;$$("#sp button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===p));upd()}
+function upd(){const q=+$("#q").value||0,u=S.p==="pot"?"pot":"stek";$("#un").textContent=u;
+ $("#s1").textContent=`${S.p==="pot"?"Pot 12 cm":"Stek berakar"} ${S.v}, harga indikatif`;$("#s2").textContent=q>0?`${q.toLocaleString("id-ID")} ${u}, sekitar ${rp(q*(S.p==="pot"?11000:2800))}`:"Isi jumlah"}
+$("#sp").onclick=e=>{const b=e.target.closest("button");b&&setP(b.dataset.v)};
+$("#sv").onclick=e=>{const b=e.target.closest("button");if(!b)return;S.v=b.dataset.v;$$("#sv button").forEach(x=>x.setAttribute("aria-pressed",x===b));upd()};
+$(".qty").onclick=e=>{const d=e.target.dataset.d;if(d){$("#q").value=Math.max(1,(+$("#q").value||0)+ +d);upd()}};$("#q").oninput=upd;
+(()=>{const w=$("#wk"),f=new Intl.DateTimeFormat("id-ID",{day:"numeric",month:"short"});let d=new Date(2026,10,17);d.setDate(d.getDate()+(8-d.getDay())%7||7);
+ for(let i=0;i<8;i++){const e=new Date(d);e.setDate(d.getDate()+6);w.add(new Option(`${f.format(d)} – ${f.format(e)}`));d.setDate(d.getDate()+7)}})();
+const waOk=v=>/^(\+?62|0)8\d{7,12}$/.test(v.replace(/[\s-]/g,""));
+function chk(pairs){let ok=true;pairs.forEach(([id,c,m])=>{const e=$("#e-"+id);e.textContent=c?"":m;if(!c&&ok){ok=false;($("#"+id)||e).scrollIntoView?.({block:"center"})}});return ok}
+function done(box,title,msg,code){$(box).innerHTML=`<div class="card ok">${B.hero.replace("#FF8DB8","#D6246E").replace("#8E0E45","#7A0A3A")}<h1 style="font-size:1.5rem">${title}</h1><div class="code">${code}</div><p class="mut" style="max-width:40ch;margin:0 auto 18px">${msg}</p><a class="btn" href="#beranda">Kembali ke beranda</a></div>`}
+$("#of").onsubmit=e=>{e.preventDefault();const q=+$("#q").value;
+ if(chk([["q",q>0,"Isi jumlah dengan angka lebih dari 0."],["nm",$("#nm").value.trim().length>1,"Tulis nama Anda, minimal 2 huruf."],["wa",waOk($("#wa").value),"Tulis nomor WhatsApp, contoh 0812 3456 7890."],["ad",$("#ad").value.trim().length>10,"Lengkapi alamat sampai kecamatan dan kabupaten atau kota."],["pv",$("#pv").checked,"Centang persetujuan agar kami boleh menindaklanjuti."]]))
+  done("#orderBox","Permintaan Anda sudah dicatat",`Admin akan memeriksa ketersediaan dan menghubungi ${$("#nm").value.trim()} lewat WhatsApp. Belum ada pesanan terkonfirmasi.`,"ORD-2026-"+String(Math.floor(Math.random()*90000)+10000))};
+$("#mc").onclick=e=>{const b=e.target.closest("button");b&&b.setAttribute("aria-pressed",b.getAttribute("aria-pressed")!=="true")};
+$("#mf").onsubmit=e=>{e.preventDefault();
+ if(chk([["mn",$("#mn").value.trim().length>1,"Tulis nama penanggung jawab."],["mu",$("#mu").value.trim().length>1,"Tulis nama usaha."],["mc",$$("#mc [aria-pressed=true]").length>0,"Pilih minimal satu bentuk kerja sama."],["mw",waOk($("#mw").value),"Tulis nomor WhatsApp, contoh 0812 3456 7890."],["mp",$("#mp").checked,"Centang persetujuan agar kami boleh menghubungi Anda."]]))
+  done("#mitBox","Pengajuan awal sudah dicatat","Ini belum persetujuan kemitraan. Tim UPSB akan meninjau profil usaha Anda lalu menghubungi lewat WhatsApp.","PRT-2026-"+String(Math.floor(Math.random()*9000)+1000))};
+/* trace */
+function trace(on){$("#tr").innerHTML=on?`<div class="bt"><span class="bl">${B.hero}</span>Informasi produk UPSB<b>FAB-POT-2026-001</b><span style="opacity:.9">Kode batch ilustratif</span></div>
+<div class="card" style="margin-top:12px"><div class="kv"><div><span>Produk</span><b>Tanaman pot 12 cm</b></div><div><span>Varietas</span><b>Fabiola</b></div><div><span>Lokasi produksi</span><b>Baturraden, Banyumas</b></div><div><span>Tanggal QC dan kemas</span><b>Belum tercatat</b></div><div><span>Tanggal kirim</span><b>Belum dikirim</b></div></div></div>
+<div class="card" style="margin-top:12px"><h3 style="margin-bottom:6px">Pemeriksaan kesehatan</h3><div class="kv"><div><span>Inspeksi visual</span><span class="st">Belum tersedia</span></div><div><span>Pengujian CMV</span><span class="st">Belum dilakukan pengujian</span></div><div><span>Sertifikat PVT</span><span class="st p">Menunggu verifikasi dokumen</span></div></div><p class="mut" style="margin-top:8px">Informasi hasil pengujian kesehatan tanaman untuk batch ini belum tersedia pada sistem.</p></div>
+<div class="card" style="margin-top:12px"><h3>Perawatan dasar</h3><p class="mut" style="margin-top:4px">Letakkan di tempat terang tanpa sinar langsung siang hari. Siram saat permukaan media mulai kering dan hindari genangan.</p></div>
+<p class="mut" style="margin-top:12px">Diperbarui 17 Nov 2026. Halaman ini tidak memuat data pelanggan.</p><a class="btn" href="#pesan" style="margin-top:14px;width:100%">Pesan lagi</a>`
+:`<div class="bt off"><span class="bl">${B.hero}</span>Informasi produk UPSB<b>Kode ini tidak aktif</b></div><div class="card" style="margin-top:12px"><h3>Informasi batch tidak ditampilkan</h3><p class="mut" style="margin-top:6px">QR ini dinonaktifkan oleh UPSB, misalnya karena koreksi data. Hubungi UPSB lewat WhatsApp dan sebutkan kode pada kemasan.</p><a class="btn" href="https://wa.me/?text=Halo%20UPSB%2C%20saya%20memindai%20QR%20yang%20tidak%20aktif." style="margin-top:14px;width:100%">Hubungi UPSB</a></div>`}
+$("#tg").onclick=e=>{const b=e.target.closest("button");if(!b)return;$$("#tg button").forEach(x=>x.setAttribute("aria-pressed",x===b));trace(b.dataset.v==="on")};trace(true);
+/* admin */
+const ST={NEW:"Baru",UNDER_REVIEW:"Ditinjau",NEED_INFORMATION:"Perlu info",CONTACTED:"Sudah dihubungi",QUOTED:"Penawaran terkirim",CONFIRMED:"Terkonfirmasi",IN_PRODUCTION:"Produksi",READY_TO_SHIP:"Siap kirim",SHIPPED:"Terkirim",COMPLETED:"Selesai",CANCELLED:"Dibatalkan",REJECTED:"Ditolak"};
+const O=[["ORD-2026-00014","Kios Tani Asri","pot","Fabiola",120,"Purwokerto","23–29 Nov","NEW"],["ORD-2026-00013","Hotel Bukit Raya","pot","Claire",60,"Baturraden","30 Nov – 6 Des","NEED_INFORMATION"],["ORD-2026-00012","Nursery Sidareja","stek","Claire",800,"Cilacap","7–13 Des","CONTACTED"],["ORD-2026-00011","Lanskap Cipta Hijau","pot","Fabiola",200,"Purbalingga","7–13 Des","QUOTED"],["ORD-2026-00010","Kios Mawar Kota","stek","Fabiola",400,"Banjarnegara","14–20 Des","CONFIRMED"]];
+let F="ALL";
+function adm(){const c=k=>O.filter(o=>o[7]===k).length;
+ $("#stats").innerHTML=`<div class="stat h"><b>${c("NEW")}</b>Permintaan baru</div><div class="stat"><b>${c("UNDER_REVIEW")+c("NEED_INFORMATION")+c("CONTACTED")+c("QUOTED")}</b>Sedang ditindaklanjuti</div><div class="stat"><b>${c("CONFIRMED")}</b>Terkonfirmasi</div><div class="stat"><b>2</b>Pengajuan mitra baru</div>`;
+ $("#fl").innerHTML=["ALL",...new Set(O.map(o=>o[7]))].map(k=>`<button class="chip" data-k="${k}" aria-pressed="${k===F}">${k==="ALL"?"Semua":ST[k]}</button>`).join("");
+ $("#ol").innerHTML=O.map((o,i)=>[o,i]).filter(([o])=>F==="ALL"||o[7]===F).map(([o,i])=>`<button class="ord" data-i="${i}"><div class="av"><svg class="ic" style="color:var(--pk)"><use href="#i-${o[2]}"/></svg></div><div><b>${o[1]}</b><span class="mut">${o[4]} ${o[2]==="pot"?"pot":"stek"} ${o[3]}, ${o[6]}</span></div><span class="st ${o[7]==="CONFIRMED"?"g":o[7]==="NEW"?"p":""}">${ST[o[7]]}</span></button>`).join("")||`<p class="mut">Belum ada permintaan dengan status ini.</p>`}
+$("#fl").onclick=e=>{const b=e.target.closest("button");if(b){F=b.dataset.k;adm()}};
+$("#ol").onclick=e=>{const b=e.target.closest(".ord");if(!b)return;const i=+b.dataset.i,o=O[i];
+ const msg=encodeURIComponent(`Halo ${o[1]}, saya admin UPSB. Terima kasih atas permintaan ${o[0]}.\n\nDetail:\n- Produk: ${o[2]==="pot"?"Tanaman pot 12 cm":"Stek berakar"}\n- Varietas: ${o[3]}\n- Jumlah: ${o[4]}\n- Lokasi: ${o[5]}\n- Kebutuhan: ${o[6]}\n\nKami ingin mengonfirmasi ketersediaan, harga, dan jadwal. Apakah dapat dilanjutkan melalui WhatsApp ini?`);
+ $("#shc").innerHTML=`<h2>${o[0]}</h2><span class="mut">Data contoh</span><div class="kv" style="margin:10px 0"><div><span>Pemesan</span><b>${o[1]}</b></div><div><span>Produk</span><b>${o[4]} ${o[2]==="pot"?"pot":"stek"} ${o[3]}</b></div><div><span>Lokasi</span><b>${o[5]}</b></div><div><span>Pekan kebutuhan</span><b>${o[6]}</b></div></div>
+ <label class="fl">Status<select class="in" id="ss">${Object.entries(ST).map(([k,v])=>`<option value="${k}"${k===o[7]?" selected":""}>${v}</option>`).join("")}</select></label>
+ <label class="fl" style="margin-top:12px">Catatan internal<textarea class="in" placeholder="Hasil diskusi, alasan perubahan status"></textarea></label>
+ <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap"><a class="btn" style="flex:1" href="https://wa.me/?text=${msg}" target="_blank" rel="noopener"><svg class="ic" style="width:20px"><use href="#i-wa"/></svg>Hubungi via WhatsApp</a><button class="btn g" id="sv2" style="flex:1">Simpan status</button></div>
+ <p class="mut" style="margin-top:10px">Pesan terisi otomatis, Anda yang menekan kirim. Sistem tidak mencatat pesan sebagai terbaca.</p>`;
+ $("#sh").classList.add("on");$("#sv2").onclick=()=>{O[i][7]=$("#ss").value;$("#sh").classList.remove("on");adm();toast("Status disimpan")}};
+$("#sh").onclick=e=>{if(e.target.id==="sh")$("#sh").classList.remove("on")};addEventListener("keydown",e=>{if(e.key==="Escape")$("#sh").classList.remove("on")});
+adm();upd();rt();
+</script>
+</body>
+</html>

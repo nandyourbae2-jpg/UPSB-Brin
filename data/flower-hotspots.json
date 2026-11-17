@@ -1,0 +1,98 @@
+{
+  "$meta": {
+    "version": "1.0",
+    "status": "DRAFT_PERLU_VERIFIKASI",
+    "note": "Konten botani umum (tingkat genus Impatiens), BUKAN klaim spesifik Fabiola/Claire. Semua entri harus ditinjau tim UPSB sebelum tayang. Bagian varietas hanya memakai materi teknologi YIM_013 dari PRD.",
+    "references": [
+      "Caris et al. 2006, American Journal of Botany 93(1):1-14, doi:10.3732/ajb.93.1.1",
+      "Impatiens L., World Flora Online / ringkasan morfologi famili Balsaminaceae"
+    ],
+    "model": { "illustrative": true, "disclaimer": "Model 3D adalah ilustrasi, bukan foto tanaman UPSB." }
+  },
+  "parts": [
+    {
+      "id": "mahkota", "order": 1, "meshNames": ["petal_upper", "petal_wing_l", "petal_wing_r"],
+      "title": "Mahkota bunga", "latin": "Korola",
+      "summary": "Lima kelopak mahkota, tampak bersayap tiga.",
+      "detail": "Mahkota terdiri dari lima kelopak. Empat kelopak samping menyatu berpasangan, sehingga bunga tampak punya satu kelopak atas dan dua sayap samping.",
+      "camera": { "position": [0, 0.6, 3.2], "target": [0, 0.5, 0] },
+      "source": "botani-umum", "verified": false, "cta": null
+    },
+    {
+      "id": "taji", "order": 2, "meshNames": ["sepal_spur", "sepal_lateral_l", "sepal_lateral_r"],
+      "title": "Sepal bertaji", "latin": "Kalkar / taji",
+      "summary": "Satu sepal membentuk taji berisi nektar.",
+      "detail": "Pacar air biasanya punya tiga sepal. Satu sepal yang lebih besar membentuk taji, yaitu kantong atau tabung kecil tempat nektar dihasilkan. Bentuk taji berbeda antarjenis.",
+      "camera": { "position": [1.4, -0.2, 2.4], "target": [0, 0, 0] },
+      "source": "botani-umum", "verified": false, "cta": null
+    },
+    {
+      "id": "benangsari", "order": 3, "meshNames": ["anthers_cap"],
+      "title": "Benang sari", "latin": "Androesium",
+      "summary": "Lima benang sari, kepala sarinya menyatu seperti tudung.",
+      "detail": "Kepala sari yang menyatu membentuk tudung di atas bakal buah. Serbuk sari dilepas lebih dulu pada fase jantan, lalu tudung gugur.",
+      "camera": { "position": [0, 0.3, 1.8], "target": [0, 0.1, 0] },
+      "source": "botani-umum", "verified": false, "cta": null
+    },
+    {
+      "id": "putik", "order": 4, "meshNames": ["pistil_ovary"],
+      "title": "Putik dan bakal buah", "latin": "Ginesium",
+      "summary": "Reseptif setelah tudung benang sari gugur.",
+      "detail": "Setelah tudung gugur, kepala putik siap menerima serbuk sari (fase betina). Urutan jantan lalu betina ini disebut protandri dan mengurangi penyerbukan sendiri. Bakal buah berada di atas dasar bunga dengan lima ruang.",
+      "camera": { "position": [0, 0.2, 1.7], "target": [0, 0.0, 0] },
+      "source": "botani-umum", "verified": false, "cta": null
+    },
+    {
+      "id": "kapsul", "order": 5, "meshNames": ["capsule"],
+      "title": "Buah kapsul", "latin": "Kapsul loculicid",
+      "summary": "Buah yang meletup saat matang.",
+      "detail": "Kapsul berdaging ini pecah secara meletup ketika matang dan melontarkan biji. Karena itu pacar air dijuluki touch-me-not.",
+      "camera": { "position": [-1.2, -0.4, 2.2], "target": [-0.3, -0.5, 0] },
+      "source": "botani-umum", "verified": false, "cta": null
+    },
+    {
+      "id": "daun", "order": 6, "meshNames": ["leaf_a", "leaf_b", "leaf_c"],
+      "title": "Daun", "latin": "Folium",
+      "summary": "Daun tunggal dengan tepi bergerigi halus.",
+      "detail": "Daun tunggal bertangkai dengan tepi bergerigi halus. Susunannya bisa berseling, berhadapan, atau melingkar tergantung jenis.",
+      "camera": { "position": [-1.8, -0.8, 2.6], "target": [-0.6, -0.9, 0] },
+      "source": "botani-umum", "verified": false, "cta": null
+    },
+    {
+      "id": "batang", "order": 7, "meshNames": ["stem", "node_a", "node_b"],
+      "title": "Batang dan ruas", "latin": "Caulis",
+      "summary": "Batang berair; ruas adalah titik tumbuh.",
+      "detail": "Batang pacar air lunak dan berair. Ruas (node) adalah tempat tunas dan daun tumbuh. Pada perbanyakan vegetatif, potongan batang berruas dibentuk menjadi stek.",
+      "camera": { "position": [1.6, -1.2, 3.0], "target": [0, -1.2, 0] },
+      "source": "botani-umum", "verified": false, "cta": null
+    },
+    {
+      "id": "akar", "order": 8, "meshNames": ["root_a", "root_b", "root_c"],
+      "title": "Akar dan stek berakar", "latin": "Radix",
+      "summary": "Stek berakar siap ditanam atau dibesarkan.",
+      "detail": "Stek berakar adalah bahan tanam yang sudah membentuk akar. UPSB merencanakan lini ini untuk mitra nursery.",
+      "camera": { "position": [0, -2.4, 3.2], "target": [0, -2.0, 0] },
+      "source": "botani-umum + rencana-UPSB", "verified": false,
+      "cta": { "label": "Minta stek berakar", "href": "/pesan?produk=stek" },
+      "needsTeamConfirmation": "Kalimat tentang rencana UPSB harus dikonfirmasi pengelola."
+    }
+  ],
+  "varieties": [
+    {
+      "id": "fabiola", "name": "Fabiola",
+      "traits": ["Rimbun", "Percabangan sekunder", "Jumlah tunas dan bunga tinggi"],
+      "source": "PRD v1.0 bagian 11.2 / materi YIM_013", "verified": false,
+      "caveat": "Adaptasi dataran rendah masih perlu divalidasi uji lokal."
+    },
+    {
+      "id": "claire", "name": "Claire",
+      "traits": ["Bunga berukuran besar", "Mekar serempak"],
+      "source": "PRD v1.0 bagian 11.2 / materi YIM_013", "verified": false,
+      "caveat": "Adaptasi dataran rendah masih perlu divalidasi uji lokal."
+    }
+  ],
+  "forbiddenClaims": [
+    "bebas virus", "indukan terindeks virus tanpa dokumen", "tahan semua kondisi",
+    "nomor sertifikat PVT sebelum dipetakan ke varietas", "logo atau afiliasi BRIN tanpa izin"
+  ]
+}

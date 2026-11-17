@@ -1,0 +1,29 @@
+# dependensi dan build
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# rahasia dan lingkungan lokal (hanya .env.example yang boleh masuk repo)
+.env
+.env.*
+!.env.example
+
+# pengujian
+test-results/
+playwright-report/
+coverage/
+
+# vercel
+.vercel/
+
+# dump database, data nyata, dokumen nyata
+*.sql
+*.dump
+*.sqlite
+/private/
+
+# sistem
+.DS_Store
+*.log

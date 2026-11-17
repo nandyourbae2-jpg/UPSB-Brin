@@ -1,0 +1,63 @@
+{
+  "$meta": {
+    "name": "Bloom Tokens v1",
+    "note": "Skala spasi 4px mengikuti prinsip yang dipublikasikan Gojek Asphalt (basis 4px). Semua NILAI LAIN adalah keputusan desain UPSB, bukan hasil pengukuran aplikasi Gojek.",
+    "fontLicense": "Plus Jakarta Sans: SIL OFL, boleh dipakai komersial. Jangan memakai font Gojek (proprietary)."
+  },
+  "space": { "0": 0, "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "8": 32, "10": 40, "12": 48, "16": 64 },
+  "layout": {
+    "screenPaddingX": 16,
+    "sectionGap": 24,
+    "tileGap": 12,
+    "touchTargetMin": 48,
+    "topBarHeight": 56,
+    "bottomNavHeight": 64,
+    "contentMaxWidth": 1040,
+    "breakpoints": { "sm": 390, "md": 700, "lg": 900, "xl": 1280 }
+  },
+  "radius": { "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "sheet": 24, "pill": 999 },
+  "color": {
+    "light": {
+      "bg": "#FFF8FA", "surface": "#FFFFFF", "surfaceAlt": "#FFF0F6", "ink": "#2B1420", "inkMuted": "#7A5A68",
+      "line": "#F1D9E3", "primary": "#D6246E", "primaryPressed": "#A8134F", "primaryTint": "#FFE3EE",
+      "onPrimary": "#FFFFFF", "hero": "#C21660", "leaf": "#1F6B4A", "leafTint": "#DDF3E8",
+      "warnBg": "#FFF1D6", "warnInk": "#7A4B00", "danger": "#B4123F", "focus": "#D6246E"
+    },
+    "dark": {
+      "bg": "#1A0E14", "surface": "#26151D", "surfaceAlt": "#33182A", "ink": "#FBEAF1", "inkMuted": "#C9A3B4",
+      "line": "#42242F", "primary": "#FF5C9A", "primaryPressed": "#FF8DB8", "primaryTint": "#4A1B32",
+      "onPrimary": "#2B0A1A", "hero": "#C21660", "leaf": "#66D6A0", "leafTint": "#173A2B",
+      "warnBg": "#3B2E10", "warnInk": "#FFD98A", "danger": "#FF9DB9", "focus": "#FF5C9A"
+    },
+    "flower3d": {
+      "fabiola": { "petal": "#E0327A", "petalEdge": "#FF7FB0", "throat": "#7A0A3A" },
+      "claire": { "petal": "#FF9CC2", "petalEdge": "#FFD1E3", "throat": "#C21660" },
+      "stem": "#7FB48F", "leaf": "#2F7A55", "pollen": "#FFE9A8", "root": "#E8D5C4"
+    }
+  },
+  "type": {
+    "family": "Plus Jakarta Sans",
+    "fallback": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+    "scale": {
+      "display": { "size": 32, "line": 36, "weight": 800, "tracking": "-0.025em" },
+      "title1": { "size": 24, "line": 30, "weight": 800, "tracking": "-0.015em" },
+      "title2": { "size": 20, "line": 26, "weight": 800 },
+      "title3": { "size": 16, "line": 22, "weight": 700 },
+      "body": { "size": 16, "line": 24, "weight": 500 },
+      "bodySm": { "size": 14, "line": 20, "weight": 500 },
+      "caption": { "size": 12, "line": 16, "weight": 600 }
+    },
+    "rules": ["Sentence case.", "Tanpa label huruf kapital berlebihan.", "Panjang baris maksimum 65 karakter."]
+  },
+  "shadow": {
+    "e1": "0 1px 2px rgba(120,20,60,0.10)",
+    "e2": "0 4px 12px rgba(120,20,60,0.12)",
+    "e3": "0 12px 32px rgba(120,20,60,0.18)"
+  },
+  "motion": {
+    "fast": 120, "base": 200, "slow": 320, "cameraFly": 600,
+    "easeOut": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "reducedMotion": "Semua durasi menjadi 0 kecuali perubahan opasitas 120ms."
+  }
+}
