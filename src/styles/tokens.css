@@ -1,0 +1,191 @@
+/* BERKAS HASIL GENERATE. Sumber: data/design-tokens.json. Jalankan `npm run tokens`. */
+
+:root {
+  --c-bg: #FFF8FA;
+  --c-surface: #FFFFFF;
+  --c-surface-alt: #FFF0F6;
+  --c-ink: #2B1420;
+  --c-ink-muted: #7A5A68;
+  --c-line: #F1D9E3;
+  --c-primary: #D6246E;
+  --c-primary-pressed: #A8134F;
+  --c-primary-tint: #FFE3EE;
+  --c-on-primary: #FFFFFF;
+  --c-hero: #C21660;
+  --c-leaf: #1F6B4A;
+  --c-leaf-tint: #DDF3E8;
+  --c-warn-bg: #FFF1D6;
+  --c-warn-ink: #7A4B00;
+  --c-danger: #B4123F;
+  --c-focus: #D6246E;
+  color-scheme: light;
+
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --layout-screen-x: 16px;
+  --layout-section-gap: 24px;
+  --layout-tile-gap: 12px;
+  --layout-touch-min: 48px;
+  --layout-topbar-h: 56px;
+  --layout-bottomnav-h: 64px;
+  --layout-content-max: 1040px;
+
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --motion-slow: 320ms;
+  --motion-camera-fly: 600ms;
+  --motion-opacity: 120ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --flower-fabiola-petal: #E0327A;
+  --flower-fabiola-petal-edge: #FF7FB0;
+  --flower-fabiola-throat: #7A0A3A;
+  --flower-claire-petal: #FF9CC2;
+  --flower-claire-petal-edge: #FFD1E3;
+  --flower-claire-throat: #C21660;
+  --flower-stem: #7FB48F;
+  --flower-leaf: #2F7A55;
+  --flower-pollen: #FFE9A8;
+  --flower-root: #E8D5C4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --c-bg: #1A0E14;
+    --c-surface: #26151D;
+    --c-surface-alt: #33182A;
+    --c-ink: #FBEAF1;
+    --c-ink-muted: #C9A3B4;
+    --c-line: #42242F;
+    --c-primary: #FF5C9A;
+    --c-primary-pressed: #FF8DB8;
+    --c-primary-tint: #4A1B32;
+    --c-on-primary: #2B0A1A;
+    --c-hero: #C21660;
+    --c-leaf: #66D6A0;
+    --c-leaf-tint: #173A2B;
+    --c-warn-bg: #3B2E10;
+    --c-warn-ink: #FFD98A;
+    --c-danger: #FF9DB9;
+    --c-focus: #FF5C9A;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --c-bg: #1A0E14;
+  --c-surface: #26151D;
+  --c-surface-alt: #33182A;
+  --c-ink: #FBEAF1;
+  --c-ink-muted: #C9A3B4;
+  --c-line: #42242F;
+  --c-primary: #FF5C9A;
+  --c-primary-pressed: #FF8DB8;
+  --c-primary-tint: #4A1B32;
+  --c-on-primary: #2B0A1A;
+  --c-hero: #C21660;
+  --c-leaf: #66D6A0;
+  --c-leaf-tint: #173A2B;
+  --c-warn-bg: #3B2E10;
+  --c-warn-ink: #FFD98A;
+  --c-danger: #FF9DB9;
+  --c-focus: #FF5C9A;
+  color-scheme: dark;
+}
+
+/* Semua durasi menjadi 0 kecuali perubahan opasitas 120ms. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+    --motion-slow: 0ms;
+    --motion-camera-fly: 0ms;
+  }
+}
+
+/*
+ * Tailwind v4. Palet bawaan, radius, bayangan, dan ukuran teks dimatikan supaya hanya token yang bisa dipakai.
+ * Spasi: --spacing = 4px, jadi p-4 = 16px. Angka sah: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16. Angka lain ditolak oleh scripts/lint-rules.ts.
+ */
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-alt: var(--c-surface-alt);
+  --color-ink: var(--c-ink);
+  --color-ink-muted: var(--c-ink-muted);
+  --color-line: var(--c-line);
+  --color-primary: var(--c-primary);
+  --color-primary-pressed: var(--c-primary-pressed);
+  --color-primary-tint: var(--c-primary-tint);
+  --color-on-primary: var(--c-on-primary);
+  --color-hero: var(--c-hero);
+  --color-leaf: var(--c-leaf);
+  --color-leaf-tint: var(--c-leaf-tint);
+  --color-warn-bg: var(--c-warn-bg);
+  --color-warn-ink: var(--c-warn-ink);
+  --color-danger: var(--c-danger);
+  --color-focus: var(--c-focus);
+
+  --spacing: 4px;
+
+  --radius-*: initial;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-sheet: 24px;
+  --radius-pill: 999px;
+
+  --text-*: initial;
+  --text-display: 32px;
+  --text-display--line-height: 36px;
+  --text-display--font-weight: 800;
+  --text-display--letter-spacing: -0.025em;
+  --text-title1: 24px;
+  --text-title1--line-height: 30px;
+  --text-title1--font-weight: 800;
+  --text-title1--letter-spacing: -0.015em;
+  --text-title2: 20px;
+  --text-title2--line-height: 26px;
+  --text-title2--font-weight: 800;
+  --text-title3: 16px;
+  --text-title3--line-height: 22px;
+  --text-title3--font-weight: 700;
+  --text-body: 16px;
+  --text-body--line-height: 24px;
+  --text-body--font-weight: 500;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 20px;
+  --text-body-sm--font-weight: 500;
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-caption--font-weight: 600;
+
+  --shadow-*: initial;
+  --shadow-e1: 0 1px 2px rgba(120,20,60,0.10);
+  --shadow-e2: 0 4px 12px rgba(120,20,60,0.12);
+  --shadow-e3: 0 12px 32px rgba(120,20,60,0.18);
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 390px;
+  --breakpoint-md: 700px;
+  --breakpoint-lg: 900px;
+  --breakpoint-xl: 1280px;
+
+  --font-sans: var(--font-plus-jakarta), system-ui, -apple-system, 'Segoe UI', sans-serif;
+}

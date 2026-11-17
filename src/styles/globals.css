@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@layer base {
+  html {
+    background-color: var(--c-bg);
+    color: var(--c-ink);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-focus);
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion: durasi menjadi 0, kecuali perubahan opasitas. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Ikon tombol tema: bulan di mode terang, matahari di mode gelap. */
+.theme-icon-for-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-icon-for-light {
+    display: none;
+  }
+  :root:not([data-theme="light"]) .theme-icon-for-dark {
+    display: inline;
+  }
+}
+
+:root[data-theme="dark"] .theme-icon-for-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-icon-for-dark {
+  display: inline;
+}
+
+/* Kontras hero tetap di mode terang dan gelap (teks putih di atas --c-hero, rasio >= 4.5). */
+.hero-surface {
+  background-color: var(--c-hero);
+  color: #ffffff;
+}
+
+.hero-tag {
+  background-color: #ffffff;
+  color: #a8134f;
+}
+
+.hero-cta-primary {
+  background-color: #ffffff;
+  color: #a8134f;
+}
+
+.hero-cta-primary:hover {
+  background-color: #ffe3ee;
+}
+
+.hero-cta-secondary {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.hero-cta-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Rail horizontal di ponsel: sembunyikan bilah gulir tanpa menghilangkan fungsi gulir. */
+.rail-scroll {
+  scrollbar-width: none;
+}
+
+.rail-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Accordion native <details>: sembunyikan penanda bawaan dan putar chevron saat terbuka. */
+.faq-summary {
+  list-style: none;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Ruang bawah footer di ponsel agar tidak tertutup tab bawah; di desktop tab bawah tersembunyi. */
+.site-footer {
+  padding-bottom: calc(var(--layout-bottomnav-h) + env(safe-area-inset-bottom) + var(--space-4));
+}
+
+@media (min-width: 700px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+}
+
+/* Kartu dalam rel horizontal di ponsel; di desktop mengisi kolom grid. */
+.rail-card {
+  flex: 0 0 min(78%, 320px);
+}
+
+@media (min-width: 700px) {
+  .rail-card {
+    flex: initial;
+  }
+}
+
+/* Panel lembar bawah (ponsel) & dialog/panel samping (desktop). */
+.sheet-backdrop {
+  background-color: rgba(26, 14, 20, 0.55);
+}
+
+.sheet-panel-mobile {
+  max-height: 85vh;
+}
+
+/* Titik berdenyut halus pada penanda hotspot 3D (dimatikan otomatis saat reduced-motion). */
+@keyframes upsb-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.35);
+  }
+}
+
+.hotspot-dot {
+  animation: upsb-pulse 1.8s ease-in-out infinite;
+}
+
+/* Tahap bunga hero: dimensi konsisten agar CLS tetap < 0.1 saat poster 2D beralih ke 3D lazy. */
+.hero-flower-stage {
+  width: min(100%, 300px);
+  height: 280px;
+}
+
+@media (min-width: 700px) {
+  .hero-flower-stage {
+    width: 320px;
+    height: 320px;
+  }
+}
